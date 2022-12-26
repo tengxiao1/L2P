@@ -70,19 +70,19 @@ args.H0alpha = args.H0alpha * 0.2
 print('traintype is %s, concat is %s' % (args.trainType, args.concat))
 print('dataset: %s' % args.dataset)
 
-# config = json.load(open("config/new%s_%s.json"%(args.dataset,args.taskType), 'r'))
+config = json.load(open("config/new%s_%s.json"%(args.dataset,args.taskType), 'r'))
 
-# for i in ['full']:
-#     for j in ['cora', 'PubMed', 'CiteSeer']:
-#         print("config/new%s_%s.json"%(j,i))
-#         json.dump(config, open("config/new%s_%s.json"%(j,i), 'w'))
+for i in ['full']:
+    for j in ['cora', 'PubMed', 'CiteSeer']:
+        print("config/new%s_%s.json"%(j,i))
+        json.dump(config, open("config/new%s_%s.json"%(j,i), 'w'))
 
 # for i in ['semi']:
 #     for j in ['cs', 'physics', 'computers','photo']:
 #         print("config/%s_%s.json"%(j,i))
 #         json.dump(config, open("config/%s_%s.json"%(j,i), 'w'))
 
-# [args.H0alpha,args.entropy,args.alpha,args.weight_decay, args.hidden, args.dropout] = list(config.values())
+[args.H0alpha,args.entropy,args.alpha,args.weight_decay, args.hidden, args.dropout] = list(config.values())
 print('H0alpha: %s, entropy: %s, alpha: %s, weight_decay: %s, hidden: %s, dropout: %s'
       % (args.H0alpha, args.entropy, args.alpha, args.weight_decay, args.hidden, args.dropout))
 
