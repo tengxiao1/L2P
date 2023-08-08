@@ -1,1 +1,2 @@
-Learning How to Propagate Messages in Graph Neural Networks
+Learning How to Propagate Messages in Graph Neural Networks (KDD2021)
+ 
